@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LaserSteve | Coming Soon</title>
+  <meta name="description" content="LaserSteve - laser, LightBurn and craft machine support. Coming soon.">
+  <style>
+    :root{
+      --bg1:#071426;
+      --bg2:#0f2f5e;
+      --accent:#ff9a1f;
+      --accent2:#69b8ff;
+      --text:#ffffff;
+      --muted:#cfe3ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(105,184,255,.25), transparent 35%),
+        linear-gradient(180deg, var(--bg2), var(--bg1));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:min(900px, 100%);
+      text-align:center;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.14);
+      border-radius:24px;
+      padding:32px 24px 40px;
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+      backdrop-filter: blur(4px);
+    }
+    .logo{
+      width:min(560px, 100%);
+      height:auto;
+      display:block;
+      margin:0 auto 24px;
+      filter: drop-shadow(0 12px 30px rgba(0,0,0,.35));
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:clamp(2rem, 5vw, 3.5rem);
+      line-height:1.05;
+      letter-spacing:.02em;
+    }
+    .dots{
+      color:var(--accent);
+    }
+    p{
+      margin:0 auto;
+      max-width:640px;
+      font-size:clamp(1rem, 2.5vw, 1.2rem);
+      line-height:1.6;
+      color:var(--muted);
+    }
+    .url{
+      margin-top:22px;
+      font-weight:700;
+      color:var(--accent2);
+      font-size:1rem;
+      letter-spacing:.03em;
+    }
+    .footer{
+      margin-top:28px;
+      font-size:.9rem;
+      color:rgba(255,255,255,.72);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="lasersteve-logo.png" alt="LaserSteve logo">
+    <h1>Coming soon<span class="dots">.....</span></h1>
+    <p>
+      Laser support, LightBurn help, setup, troubleshooting and training for crafters
+      and small businesses.
+    </p>
+    <div class="url">www.crafttechsupport.co.uk</div>
+    <div class="footer">Website under construction</div>
+  </main>
+</body>
+</html>
