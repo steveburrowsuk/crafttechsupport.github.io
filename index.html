@@ -4,54 +4,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>LaserSteve | Coming Soon</title>
 
 <style>
 
 :root{
---bg:#0f2f5e;
---text:#ffffff;
---card:#1a3f78;
-}
-
-body.light{
---bg:#f5f7fb;
---text:#111;
---card:#ffffff;
+--bg-dark:#071426;
+--bg-light:#f4f7fb;
+--card-dark:#0f2f5e;
+--card-light:#ffffff;
+--text-dark:#ffffff;
+--text-light:#111;
+--accent:#25D366;
 }
 
 body{
 margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:var(--bg);
-color:var(--text);
+font-family:Arial;
+background:var(--bg-dark);
+color:var(--text-dark);
 display:flex;
 align-items:center;
 justify-content:center;
 height:100vh;
-transition:0.3s;
+transition:.3s;
+}
+
+body.light{
+background:var(--bg-light);
+color:var(--text-light);
 }
 
 .card{
-background:var(--card);
+background:var(--card-dark);
 padding:40px;
-border-radius:20px;
+border-radius:16px;
 text-align:center;
 width:420px;
-box-shadow:0 20px 40px rgba(0,0,0,0.25);
+box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
-h1{
-margin-top:0;
+body.light .card{
+background:var(--card-light);
+}
+
+.logo{
+max-width:340px;
+margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
 margin-top:18px;
-padding:12px 18px;
+padding:12px 20px;
 border-radius:8px;
-background:#25D366;
+background:var(--accent);
 color:white;
 text-decoration:none;
 font-weight:bold;
@@ -62,9 +69,16 @@ position:fixed;
 top:15px;
 right:15px;
 cursor:pointer;
-padding:8px 12px;
+padding:6px 10px;
 background:#ccc;
-border-radius:8px;
+border-radius:6px;
+font-size:12px;
+}
+
+.footer{
+margin-top:12px;
+font-size:14px;
+opacity:.8;
 }
 
 </style>
@@ -73,19 +87,24 @@ border-radius:8px;
 
 <body>
 
-<div class="toggle" onclick="toggleMode()">toggle</div>
+<div class="toggle" onclick="toggleMode()">mode</div>
 
 <div class="card">
 
+<img src="lasersteve-logo.svg" class="logo">
+
 <h1>Coming soon.....</h1>
 
-<p>Laser support, LightBurn training and craft machine help.</p>
+<p>Laser support, LightBurn training and craft machine help</p>
 
-<p><strong>www.crafttechsupport.co.uk</strong></p>
+<div class="footer">
+www.crafttechsupport.co.uk<br>
+hello@lasersteve.co.uk
+</div>
 
-<p>hello@lasersteve.co.uk</p>
-
-<a class="btn" href="https://wa.me/447000000000">WhatsApp</a>
+<a class="btn" href="https://wa.me/447000000000">
+WhatsApp
+</a>
 
 </div>
 
